@@ -1,0 +1,7 @@
+---
+mysql-host: 127.0.0.1
+mysql-user: root
+mysql-password: unmagnifiquemdp
+mysql-database: invsync
+restore-inv-onjoin: true
+...
