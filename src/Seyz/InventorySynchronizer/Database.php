@@ -16,7 +16,7 @@ class Database {
 	{
 		$name = $player->getName();
 		$inv = self::getInventory($name);
-		$armor = self::getArmorInventory($player->getName());
+		$armor = self::getArmorInventory($name);
 
 		$player->getInventory()->clearAll();
 		$player->getArmorInventory()->clearAll();
