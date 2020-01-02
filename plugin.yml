@@ -1,6 +1,6 @@
 name: InventorySynchronizer
 author: Seyz
-version: 1.0
+version: 1.1
 api: 3.0.0
 website: https://github.com/Seyz123
 main: Seyz\InventorySynchronizer\Main
