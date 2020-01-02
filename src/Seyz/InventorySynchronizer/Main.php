@@ -29,7 +29,16 @@ class Main extends PluginBase implements Listener {
 		Database::init();
 	}
 
-	public function onLogin(PlayerLoginEvent $ev)
+	public function onDisable()
+    {
+        foreach ($this->getServer()->getOnlinePlayers() as $player) {
+            if(Database::isRegistered($player)){
+                Database::saveInventory($player);
+            }
+        }
+    }
+
+    public function onLogin(PlayerLoginEvent $ev)
 	{
 		$player = $ev->getPlayer();
 
